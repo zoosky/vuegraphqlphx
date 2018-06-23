@@ -12,9 +12,13 @@ config :vuegraphqlphx, VuegraphqlphxWeb.Endpoint,
   code_reloader: true,
   check_origin: false,
   watchers: [
-    node: ["node_modules/webpack/bin/webpack.js", "--watch", "--colors",
-    cd: Path.expand("../assets", __DIR__)
-  ]]
+    node: [
+      "node_modules/webpack/bin/webpack.js",
+      "--watch",
+      "--colors",
+      cd: Path.expand("../assets", __DIR__)
+    ]
+  ]
 
 # ## SSL Support
 #
@@ -54,7 +58,7 @@ config :phoenix, :stacktrace_depth, 20
 config :vuegraphqlphx, Vuegraphqlphx.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  password: "andi.123",
   database: "vuegraphqlphx_dev",
   hostname: "localhost",
   pool_size: 10
