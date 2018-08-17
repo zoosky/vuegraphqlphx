@@ -58,7 +58,7 @@ config :phoenix, :stacktrace_depth, 20
 config :vuegraphqlphx, Vuegraphqlphx.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "andi.123",
+  password: "life.is-nice.123!",
   database: "vuegraphqlphx_dev",
   hostname: "localhost",
   pool_size: 10

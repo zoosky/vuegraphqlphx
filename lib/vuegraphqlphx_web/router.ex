@@ -16,11 +16,12 @@ defmodule VuegraphqlphxWeb.Router do
     pipe_through :browser # Use the default browser stack
     get "/", PageController, :index
   end
-  
+
   forward "/graphql",
     Absinthe.Plug,
     schema: VuegraphqlphxWeb.Schema
-  
+
+  # For the GraphiQL interactive interface, a must-have for happy frontend devs.
   forward "/graphiql",
     Absinthe.Plug.GraphiQL,
     schema: VuegraphqlphxWeb.Schema,

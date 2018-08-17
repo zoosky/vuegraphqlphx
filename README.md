@@ -34,6 +34,7 @@ Test Installation:
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
+  * Start datatbase with `docker run --name vuegraphqlphx  -e POSTGRES_PASSWORD=life.is-nice.123! -d postgres`
   * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
   * Start Phoenix endpoint with `mix phx.server`
 
